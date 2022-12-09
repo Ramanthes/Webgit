@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Άσκηση_2</title>
+</head>
+<body>
+    <h1>Φόρμα Πληρωμής</h1>
+
+    <p>Τα υποχρεωτικά πεδία ακολουθούνται από <abbr title="Υποχρεωτικό πεδίο">*</abbr>.</p>
+
+    <h2>Προσωπικά Στοιχεία</h2>
+   
+    <fieldset style="width: 350px;"> 
+
+      <legend>Title</legend> 
+
+        <div>
+          <input type="radio" name="title" id="mr" value="Mr." checked>
+          <label for="mr">Mr.</label>
+        </div>
+
+        <div>
+          <input type="radio" name="title" id="mrs" value="Mrs.">
+          <label for="mrs">Mrs.</label>
+        </div>
+
+        <div>
+          <input type="radio" name="title" id="dr" value="Dr.">
+          <label for="dr">Dr.</label>
+        </div>
+
+    </fieldset>
+
+    <p>
+
+        <label for="name">Name:<abbr title="Υποχρεωτικό πεδίο">*</abbr> </label>
+        <input type="text" id="name" name="name"  required>
+
+    </p>
+
+    <p>
+
+        <label for="email">E-mail:<abbr title="Υποχρεωτικό πεδίο">*</abbr> </label>
+        <input type="email" id="email" name="email"  required>
+
+    </p>
+
+    <p>
+
+        <label for="password">Password:<abbr title="Υποχρεωτικό πεδίο">*</abbr> </label>
+        <input type="password" id="password" name="password"  required>
+
+    </p>
+
+    <h2>Πληροφορίες Πληρωμής</h2>
+
+    <p>
+
+        <label for="ccard">Card type</label>
+             <select name="ccard" id="ccard">
+                <option value="1">Visa</option>
+                <option value="2">Mastercard</option>
+                <option value="3">American Express</option>
+
+             </select>
+
+    </p>
+
+    <p>
+
+        <label for="ccnumber">Card number:<abbr title="Υποχρεωτικό πεδίο">*</abbr> </label>
+        <input type="text" id="ccnumber" name="ccnumber" minlength="16" maxlength="16" required>
+
+    </p>
+
+    <p>
+       
+        <label for="ccexpiration">Expiration date:<abbr title="Υποχρεωτικό πεδίο">*</abbr> </label>
+        <input type="text" name="ccexpiration" placeholder="MM/YY" minlength="5" maxlength="5" size="5" />
+        
+    </p>
+
+    <p>
+
+        <input type="Submit" value="Προχωρήστε στην πληρωμή">
+        
+    </p>
+
+
+</body>
+</html>
